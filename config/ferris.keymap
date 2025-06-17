@@ -212,60 +212,60 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp Q  &kp W       &kp E       &kp R        &kp T          &kp Y                  &kp U        &kp I       &kp O       &kp P
-&kp A  &ht LGUI S  &ht LALT D  &ht LCTRL F  &kp G          &kp H                  &ht RCTRL J  &ht RALT K  &ht RGUI L  &kp BACKSPACE
-&kp Z  &kp X       &kp C       &kp V        &kp B          &kp N                  &kp M        &kp COMMA   &kp DOT     &kp CAPSLOCK
-                               &lt 1 TAB    &lt 2 SPACE    &ht LEFT_SHIFT RETURN  &tm 3 5
+&kp Q  &kp W       &kp E       &kp R        &kp T        &kp Y                  &kp U        &kp I       &kp O       &kp P
+&kp A  &ht LGUI S  &ht LALT D  &ht LCTRL F  &kp G        &kp H                  &ht RCTRL J  &ht RALT K  &ht RGUI L  &kp BACKSPACE
+&kp Z  &kp X       &kp C       &kp V        &kp B        &kp N                  &kp M        &kp COMMA   &kp DOT     &kp CAPSLOCK
+                               &lt 1 TAB    &lt 2 SPACE  &ht LEFT_SHIFT RETURN  &tm 3 5
             >;
         };
 
         symbols_layer {
             display-name = "SYMBOLS";
             bindings = <
-&kp LBKT         &kp RBKT   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET    &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS
-&kp STAR         &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE     &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp UNDERSCORE
-&kp EXCLAMATION  &kp TILDE  &kp HASH              &sk PERCENT            &kp AT       &kp AMPS   &kp N7  &kp N8  &kp N9  &kp DOLLAR
-                                                  &trans                 &trans       &kp N0     &trans
+&kp LBKT         &kp RBKT   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS
+&kp STAR         &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp UNDERSCORE
+&kp EXCLAMATION  &kp TILDE  &kp HASH              &sk PERCENT            &kp AT     &kp AMPS   &kp N7  &kp N8  &kp N9  &kp DOLLAR
+                                                  &trans                 &trans     &trans     &kp N0
             >;
         };
 
         symbols_extra_layer {
             display-name = "SYMBOLS_EXTRA";
             bindings = <
-&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff    &str_strict_eq  &str_less_eq   &str_greater_eq    &str_arrow  &str_fat_arrow
-&str_and    &str_or         &str_opt        &str_plus_eq  &str_diff           &str_eq         &kp LESS_THAN  &kp GREATER_THAN   &kp SEMI    &kp SINGLE_QUOTE
-&trans      &trans          &trans          &trans        &trans              &kp COLON       &kp QUESTION   &kp DOUBLE_QUOTES  &kp GRAVE   &kp SLASH
-                                            &trans        &kp ESC             &trans          &trans
+&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq    &str_arrow  &str_fat_arrow
+&str_and    &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN   &kp SEMI    &kp SINGLE_QUOTE
+&trans      &trans          &trans          &trans        &trans            &kp COLON       &kp QUESTION   &kp DOUBLE_QUOTES  &kp GRAVE   &kp SLASH
+                                            &trans        &kp ESC           &trans          &trans
             >;
         };
 
         edit_layer {
             display-name = "EDIT";
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans
-&kp TAB  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
-&trans   &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INS
-                         &trans  &trans    &trans    &trans
+&kp ESC  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans
+&kp TAB  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DELETE
+&trans   &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INS
+                         &trans  &trans  &trans    &trans
             >;
         };
 
         func_layer {
             display-name = "FUNC";
             bindings = <
-&bootloader     &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC       &kp K_SLEEP      &kp F1  &kp F2  &kp F3  &kp F10
-&bt BT_CLR      &bt BT_PRV         &bt BT_NXT    &kp K_PREV            &kp K_NEXT          &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11
-&studio_unlock  &bt BT_SEL 0       &bt BT_SEL 1  &kp K_MUTE            &kp K_PLAY_PAUSE    &kp K_MENU       &kp F7  &kp F8  &kp F9  &kp F12
-                                                 &trans                &trans              &trans           &trans
+&bootloader     &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC     &kp K_SLEEP      &kp F1  &kp F2  &kp F3  &kp F10
+&bt BT_CLR      &bt BT_PRV         &bt BT_NXT    &kp K_PREV            &kp K_NEXT        &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11
+&studio_unlock  &bt BT_SEL 0       &bt BT_SEL 1  &kp K_MUTE            &kp K_PLAY_PAUSE  &kp K_MENU       &kp F7  &kp F8  &kp F9  &kp F12
+                                                 &trans                &trans            &trans           &trans
             >;
         };
 
         mouse {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans     &trans    &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &mkp RCLK  &mkp LCLK  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans     &trans     &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                           &trans     &trans    &trans          &tog 5
+&trans  &trans  &trans     &trans     &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans     &trans     &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                           &trans     &trans  &trans          &tog 5
             >;
         };
     };
