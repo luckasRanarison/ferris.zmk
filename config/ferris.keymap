@@ -70,6 +70,15 @@
             bindings = <&mo>, <&tog>;
         };
 
+        quote_td: quote_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUOTE_TD";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>, <&kp GRAVE>;
+
+            tapping-term-ms = <150>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <300>;    // 40
@@ -204,6 +213,23 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "STR_FAT_ARROW";
         };
+
+        triple_dots: triple_dots {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp DOT>;
+            label = "TRIPLE_DOTS";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <28 27>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -212,10 +238,10 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp Q  &kp W       &kp E       &kp R        &kp T        &kp Y                  &kp U        &kp I       &kp O       &kp P
-&kp A  &ht LGUI S  &ht LALT D  &ht LCTRL F  &kp G        &kp H                  &ht RCTRL J  &ht RALT K  &ht RGUI L  &kp BACKSPACE
-&kp Z  &kp X       &kp C       &kp V        &kp B        &kp N                  &kp M        &kp COMMA   &kp DOT     &kp CAPSLOCK
-                               &lt 1 TAB    &lt 2 SPACE  &ht LEFT_SHIFT RETURN  &tm 3 5
+&kp Q  &kp W       &kp E       &kp R           &kp T        &kp Y                  &kp U        &kp I       &kp O       &kp P
+&kp A  &ht LGUI S  &ht LALT D  &ht LCTRL F     &kp G        &kp H                  &ht RCTRL J  &ht RALT K  &ht RGUI L  &kp BACKSPACE
+&kp Z  &kp X       &kp C       &kp V           &kp B        &kp N                  &kp M        &kp COMMA   &kp DOT     &kp SLASH
+                               &lt 1 CAPSLOCK  &lt 2 SPACE  &ht LEFT_SHIFT RETURN  &tm 3 5
             >;
         };
 
@@ -225,16 +251,16 @@
 &kp LBKT         &kp RBKT   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS
 &kp STAR         &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp UNDERSCORE
 &kp EXCLAMATION  &kp TILDE  &kp HASH              &sk PERCENT            &kp AT     &kp AMPS   &kp N7  &kp N8  &kp N9  &kp DOLLAR
-                                                  &trans                 &trans     &trans     &kp N0
+                                                  &trans                 &trans     &quote_td  &kp N0
             >;
         };
 
         symbols_extra_layer {
             display-name = "SYMBOLS_EXTRA";
             bindings = <
-&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq    &str_arrow  &str_fat_arrow
-&str_and    &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN   &kp SEMI    &kp SINGLE_QUOTE
-&trans      &trans          &trans          &trans        &trans            &kp COLON       &kp QUESTION   &kp DOUBLE_QUOTES  &kp GRAVE   &kp SLASH
+&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_fat_arrow
+&str_and    &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN  &str_fat_arrow  &triple_dots
+&trans      &trans          &trans          &trans        &trans            &trans          &trans         &trans            &trans          &trans
                                             &trans        &kp ESC           &trans          &trans
             >;
         };
@@ -253,8 +279,8 @@
             display-name = "FUNC";
             bindings = <
 &bootloader     &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC     &kp K_SLEEP      &kp F1  &kp F2  &kp F3  &kp F10
-&bt BT_CLR      &bt BT_PRV         &bt BT_NXT    &kp K_PREV            &kp K_NEXT        &kp PRINTSCREEN  &kp F4  &kp F5  &kp F6  &kp F11
-&studio_unlock  &bt BT_SEL 0       &bt BT_SEL 1  &kp K_MUTE            &kp K_PLAY_PAUSE  &kp K_MENU       &kp F7  &kp F8  &kp F9  &kp F12
+&bt BT_CLR      &bt BT_PRV         &bt BT_NXT    &kp K_PREV            &kp K_NEXT        &kp K_LOCK       &kp F4  &kp F5  &kp F6  &kp F11
+&studio_unlock  &bt BT_SEL 0       &bt BT_SEL 1  &kp K_MUTE            &kp K_PLAY_PAUSE  &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
                                                  &trans                &trans            &trans           &trans
             >;
         };
