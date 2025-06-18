@@ -1,0 +1,246 @@
+parse_config:
+  raw_binding_map:
+    "&str_field": "?."
+    "&str_dbl_slash": "//"
+    "&str_dbl_colon": "::"
+    "&str_min_eq": "-="
+    "&str_strict_diff": "!=="
+    "&str_strict_eq": "==="
+    "&str_less_eq": "<="
+    "&str_greater_eq": ">="
+    "&str_arrow": "->"
+    "&str_dbl_hash": "##"
+
+    "&str_and": "&&"
+    "&str_or": "||"
+    "&str_opt": "?"
+    "&str_plus_eq": "+="
+    "&str_diff": "!="
+    "&str_eq": "=="
+    "<": "<"
+    ">": ">"
+    "&str_fat_arrow": "=>"
+    "&triple_dots": "..."
+
+    "&studio_unlock": $$mdi:lock-open$$
+    "&bootloader":
+      $$mdi:progress-download$$
+
+      # Mouse
+    "&msc SCRL_UP":
+      tap: $$mdi:pan-up$$
+      hold: ""
+      shifted: ""
+    "&msc SCRL_DOWN":
+      tap: $$mdi:pan-down$$
+      hold: ""
+      shifted: ""
+    "&msc SCRL_LEFT":
+      tap: $$mdi:pan-left$$
+      hold: ""
+      shifted: ""
+    "&msc SCRL_RIGHT":
+      tap: $$mdi:pan-right$$
+      hold: ""
+      shifted: ""
+    "&mmv MOVE_LEFT":
+      tap: $$mdi:menu-left$$
+      hold: ""
+      shifted: $$mdi:mouse$$
+    "&mmv MOVE_RIGHT":
+      tap: $$mdi:menu-right$$
+      hold: ""
+      shifted: $$mdi:mouse$$
+    "&mmv MOVE_UP":
+      tap: $$mdi:menu-up$$
+      hold: ""
+      shifted: $$mdi:mouse$$
+    "&mmv MOVE_DOWN":
+      tap: $$mdi:menu-down$$
+      hold: ""
+      shifted: $$mdi:mouse$$
+    "&mkp LCLK":
+      tap: $$mdi:mouse-left-click-outline$$
+    "&mkp RCLK":
+      tap: $$mdi:mouse-right-click-outline$$
+    "&mkp MCLK":
+      tap: $$mdi:mouse-scroll-wheel$$
+
+  zmk_keycode_map:
+    # Symbols
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL: "="
+    PLUS: +
+    MINUS: "-"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH:
+      tap: "/"
+      hold: "?"
+    QUESTION: "?"
+    QMARK: "?"
+    BACKSLASH: '\'
+    BSLH: '\'
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    PIPE2: "|"
+    NON_US_BSLH: "|"
+    SEMICOLON: ";"
+    SEMI: ";"
+    COLON: ":"
+    SINGLE_QUOTE: "'"
+    SQT: "'"
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+
+    LESS_THAN: <
+    LT: <
+    PERIOD: "."
+    DOT: "."
+    COMMA: ","
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET: "["
+    LBKT: "["
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET: "]"
+    RBKT: "]"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE: "`"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
+
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LEFT_ALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LEFT_SHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    LG: $$mdi:apple-keyboard-command$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    LEFT_GUI: $$mdi:apple-keyboard-command$$
+    LEFT_COMMAND: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RIGHT_ALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RIGHT_SHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
+    RG: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
+    PSCRN: $$mdi:monitor-screenshot$$
+    PRINTSCREEN: $$mdi:monitor-screenshot$$
+    RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
+    PAGE_UP:
+      tap: "PgUp"
+      shifted: ""
+    PAGE_DOWN:
+      tap: "PgDn"
+      shifted: ""
+    INSERT:
+      tap: "Ins"
+      shifted: ""
+
+    UP: $$mdi:arrow-up-bold$$
+    UP_ARROW: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    DOWN_ARROW: $$mdi:arrow-down-bold$$
+    LEFT_ARROW: $$mdi:arrow-left-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    RIGHT_ARROW: $$mdi:arrow-right-bold$$
+
+    # Whitespace
+    ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    RET:
+      type: enter
+      tap: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    ESCAPE: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+
+    # Locks
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+
+    # Sound
+    K_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+    C_VOLUME_UP: $$mdi:volume-high$$
+    C_VOLUME_DOWN: $$mdi:volume-low$$
+
+    # Media
+    K_NEXT: $$mdi:skip-next$$
+    K_PREV: $$mdi:skip-previous$$
+    K_PP: $$mdi:play-pause$$
+    K_PLAY_PAUSE: $$mdi:play-pause$$
+
+    # Bluetooth
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+    BT_PRV: $$mdi:bluetooth-connect$$
+    BT_NXT: $$mdi:bluetooth-connect$$
+
+    # Settings
+    C_BRI_UP: $$mdi:brightness-5$$
+    C_BRI_INC: $$mdi:brightness-5$$
+    C_BRIGHTNESS_INC: $$mdi:brightness-5$$
+    C_BRI_DN: $$mdi:brightness-7$$
+    C_BRI_DEC: $$mdi:brightness-7$$
+    C_BRIGHTNESS_DEC: $$mdi:brightness-7$$
+
+    # System
+    K_SLEEP: $$mdi:power-sleep$$
+    K_POWER: $$mdi:power-standby$$
+    K_LOCK: $$mdi:lock$$
+
+  zmk_combos:
+    caps_word:
+      align: top
+
+draw_config:
+  dark_mode: auto
+  draw_key_sides: true
+  footer_text: Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>
