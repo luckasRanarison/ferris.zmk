@@ -292,7 +292,7 @@
 &str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_dbl_hash
 &str_and    &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN  &str_fat_arrow  &triple_dots
 &trans      &trans          &trans          &trans        &trans            &trans          &trans         &trans            &trans          &trans
-                                            &trans        &kp ESC           &trans          &trans
+                                            &trans        &trans            &trans          &trans
             >;
         };
 

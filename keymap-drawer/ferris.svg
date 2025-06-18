@@ -465,7 +465,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M336,55 h-190 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M336,55 h190 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
 <rect rx="6" ry="6" x="322" y="42" width="28" height="26" class="combo"/>
-<text x="336" y="55" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="329" y="48" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 </g>
 </g>
@@ -804,7 +804,6 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(279, 245) rotate(30.0)" class="key held keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-7" y="-11" height="14" width="14.0" class="key held tap glyph mdi:keyboard-esc"/>
 </g>
 <g transform="translate(393, 245) rotate(-30.0)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>

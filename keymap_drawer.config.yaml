@@ -66,6 +66,8 @@ parse_config:
     "&mkp MCLK":
       tap: $$mdi:mouse-scroll-wheel$$
 
+    "&caps_word": $$mdi:apple-keyboard-caps$$
+
   zmk_keycode_map:
     # Symbols
     EXCLAMATION: "!"
