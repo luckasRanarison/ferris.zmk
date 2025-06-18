@@ -1,145 +1,215 @@
 layout: {zmk_keyboard: ferris}
 layers:
   DEFAULT:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-    - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-    - {t: F, h: '$$mdi:apple-keyboard-control$$'}
-    - G
-    - H
-    - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-    - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-    - {t: L, h: '$$mdi:apple-keyboard-command$$'}
-    - {t: '$$mdi:backspace$$', type: backspace}
-  - - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - ','
-    - .
-    - {t: /, h: '?'}
-  - - {t: '$$mdi:apple-keyboard-caps$$', h: SYMBOLS}
-    - {t: '$$mdi:keyboard-space$$', h: SYMBOLS_EXTRA}
-    - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
-    - {t: MOUSE, h: EDIT}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: '?'}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: SYMBOLS}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOLS_EXTRA}
+  - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: MOUSE, h: EDIT}
   SYMBOLS:
-  - ['[', ']', '{', '}', ^, +, '1', '2', '3', '-']
-  - ['*', \, (, ), '|', '=', '4', '5', '6', _]
-  - ['!', '~', '#', '%', '@', '&', '7', '8', '9', $]
-  - - {type: held}
-    - {t: ▽, type: trans}
-    - ':'
-    - '0'
+  - '['
+  - ']'
+  - '{'
+  - '}'
+  - ^
+  - +
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - '*'
+  - \
+  - (
+  - )
+  - '|'
+  - '='
+  - '4'
+  - '5'
+  - '6'
+  - _
+  - '!'
+  - '~'
+  - '#'
+  - '%'
+  - '@'
+  - '&'
+  - '7'
+  - '8'
+  - '9'
+  - $
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ':'
+  - '0'
   SYMBOLS_EXTRA:
-  - ['?.', //, '::', -=, '!==', ===, <=, '>=', ->, '##']
-  - ['&&', '||', '?', +=, '!=', ==, <, '>', =>, '...']
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - ?.
+  - //
+  - '::'
+  - -=
+  - '!=='
+  - ===
+  - <=
+  - '>='
+  - ->
+  - '##'
+  - '&&'
+  - '||'
+  - '?'
+  - +=
+  - '!='
+  - ==
+  - <
+  - '>'
+  - =>
+  - '...'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   EDIT:
-  - - $$mdi:keyboard-esc$$
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - $$mdi:keyboard-tab$$
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - $$mdi:arrow-left-bold$$
-    - $$mdi:arrow-down-bold$$
-    - $$mdi:arrow-up-bold$$
-    - $$mdi:arrow-right-bold$$
-    - $$mdi:backspace-reverse-outline$$
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - HOME
-    - PG DN
-    - PG UP
-    - END
-    - INS
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
+  - $$mdi:keyboard-esc$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:keyboard-tab$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:backspace-reverse-outline$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - INS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   FUNC:
-  - ['$$mdi:progress-download$$', '$$mdi:volume-low$$', '$$mdi:volume-high$$', '$$mdi:brightness-7$$', '$$mdi:brightness-5$$', '$$mdi:power-sleep$$', F1, F2, F3,
-    F10]
-  - ['$$mdi:bluetooth-off$$', '$$mdi:bluetooth-connect$$', '$$mdi:bluetooth-connect$$', '$$mdi:skip-previous$$', '$$mdi:skip-next$$', '$$mdi:lock$$', F4, F5, F6,
-    F11]
-  - - $$mdi:lock-open$$
-    - {t: '$$mdi:bluetooth-connect$$', h: '0'}
-    - {t: '$$mdi:bluetooth-connect$$', h: '1'}
-    - $$mdi:volume-off$$
-    - $$mdi:play-pause$$
-    - $$mdi:monitor-screenshot$$
-    - F7
-    - F8
-    - F9
-    - F12
-  - - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
+  - $$mdi:progress-download$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - $$mdi:power-sleep$$
+  - F1
+  - F2
+  - F3
+  - F10
+  - $$mdi:bluetooth-off$$
+  - $$mdi:bluetooth-connect$$
+  - $$mdi:bluetooth-connect$$
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
+  - $$mdi:lock$$
+  - F4
+  - F5
+  - F6
+  - F11
+  - $$mdi:lock-open$$
+  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
+  - $$mdi:monitor-screenshot$$
+  - F7
+  - F8
+  - F9
+  - F12
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   MOUSE:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - $$mdi:mouse-right-click-outline$$
-    - $$mdi:mouse-left-click-outline$$
-    - {t: ▽, type: trans}
-    - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-    - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-    - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-    - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - $$mdi:pan-left$$
-    - $$mdi:pan-down$$
-    - $$mdi:pan-up$$
-    - $$mdi:pan-right$$
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: MOUSE, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:mouse-right-click-outline$$
+  - $$mdi:mouse-left-click-outline$$
+  - {t: ▽, type: trans}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:pan-left$$
+  - $$mdi:pan-down$$
+  - $$mdi:pan-up$$
+  - $$mdi:pan-right$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: MOUSE, h: toggle}
 combos:
 - p: [28, 27]
   k: ;
