@@ -76,7 +76,7 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>, <&kp GRAVE>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         mmv {
