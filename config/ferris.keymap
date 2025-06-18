@@ -233,7 +233,7 @@
         compatible = "zmk,combos";
 
         semicolon {
-            bindings = <&kp SEMI>;
+            bindings = <&kp SEMICOLON>;
             key-positions = <28 27>;
             layers = <0>;
         };
@@ -253,6 +253,7 @@
         single_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         caps_word {
