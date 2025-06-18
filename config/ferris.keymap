@@ -220,6 +220,13 @@
             bindings = <&kp DOT &kp DOT &kp DOT>;
             label = "TRIPLE_DOTS";
         };
+
+        str_dbl_hash: str_dbl_hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp POUND &kp POUND>;
+            label = "STR_DBL_HASH";
+        };
     };
 
     combos {
@@ -246,6 +253,12 @@
         single_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <18 19>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <12 17>;
+            layers = <0>;
         };
     };
 
@@ -275,7 +288,7 @@
         symbols_extra_layer {
             display-name = "SYMBOLS_EXTRA";
             bindings = <
-&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_fat_arrow
+&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_dbl_hash
 &str_and    &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN  &str_fat_arrow  &triple_dots
 &trans      &trans          &trans          &trans        &trans            &trans          &trans         &trans            &trans          &trans
                                             &trans        &kp ESC           &trans          &trans
