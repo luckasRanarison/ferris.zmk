@@ -230,6 +230,23 @@
             key-positions = <28 27>;
             layers = <0>;
         };
+
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <18 19>;
+        };
     };
 
     keymap {
@@ -248,10 +265,10 @@
         symbols_layer {
             display-name = "SYMBOLS";
             bindings = <
-&kp LBKT         &kp RBKT   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS
-&kp STAR         &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp UNDERSCORE
-&kp EXCLAMATION  &kp TILDE  &kp HASH              &sk PERCENT            &kp AT     &kp AMPS   &kp N7  &kp N8  &kp N9  &kp DOLLAR
-                                                  &trans                 &trans     &quote_td  &kp N0
+&kp LBKT         &kp RBKT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp CARET  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp MINUS
+&kp STAR         &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE   &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp UNDERSCORE
+&kp EXCLAMATION  &kp TILDE      &kp HASH              &kp PERCENT            &kp AT     &kp AMPS   &kp N7  &kp N8  &kp N9  &kp DOLLAR
+                                                      &trans                 &trans     &kp COLON  &kp N0
             >;
         };
 
