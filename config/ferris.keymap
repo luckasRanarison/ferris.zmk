@@ -258,7 +258,7 @@
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <12 17>;
+            key-positions = <32 31>;
             layers = <0>;
         };
     };
