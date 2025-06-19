@@ -189,6 +189,9 @@ parse_config:
     RET:
       type: enter
       tap: $$mdi:keyboard-return$$
+    RETURN:
+      type: enter
+      tap: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     ESCAPE: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
