@@ -165,11 +165,11 @@
             label = "STR_OPTION";
         };
 
-        str_dbl_paren: str_field {
+        str_dbl_paren: str_dbl_paren {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR>;
-            label = "STR_FIELD";
+            label = "STR_DBL_PAREN";
         };
 
         str_eq: str_eq {
@@ -289,9 +289,9 @@
         symbols_extra_layer {
             display-name = "SYMBOLS_EXTRA";
             bindings = <
-&str_field  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_dbl_hash
-&str_and    &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN  &str_fat_arrow  &triple_dots
-&trans      &trans          &trans          &trans        &trans            &trans          &trans         &trans            &trans          &trans
+&str_dbl_paren  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_dbl_hash
+&str_and        &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN  &str_fat_arrow  &triple_dots
+&trans          &trans          &trans          &trans        &trans            &trans          &trans         &trans            &trans          &trans
                                             &trans        &trans            &trans          &trans
             >;
         };
