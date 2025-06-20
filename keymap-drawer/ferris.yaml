@@ -71,7 +71,7 @@ layers:
   - ':'
   - '0'
   SYMBOLS_EXTRA:
-  - '&str_field'
+  - ()
   - //
   - '::'
   - -=
