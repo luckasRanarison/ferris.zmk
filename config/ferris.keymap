@@ -165,10 +165,10 @@
             label = "STR_OPTION";
         };
 
-        str_field: str_field {
+        str_dbl_paren: str_field {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp QMARK &kp DOT>;
+            bindings = <&kp LPAR &kp RPAR>;
             label = "STR_FIELD";
         };
 
