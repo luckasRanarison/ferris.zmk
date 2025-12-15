@@ -77,6 +77,15 @@
             tapping-term-ms = <200>;
         };
 
+        mth: mth {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MTH";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <300>;    // 40
@@ -290,7 +299,7 @@
 &str_dbl_paren  &str_dbl_slash  &str_dbl_colon  &str_min_eq   &str_strict_diff  &str_strict_eq  &str_less_eq   &str_greater_eq   &str_arrow      &str_dbl_hash
 &str_and        &str_or         &str_opt        &str_plus_eq  &str_diff         &str_eq         &kp LESS_THAN  &kp GREATER_THAN  &str_fat_arrow  &triple_dots
 &trans          &trans          &trans          &trans        &trans            &trans          &trans         &trans            &trans          &trans
-                                            &trans        &trans            &trans          &trans
+                                                &trans        &trans            &trans          &trans
             >;
         };
 
@@ -317,10 +326,10 @@
         mouse {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans     &trans  &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans     &trans     &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                           &trans     &trans  &trans          &tog 5
+&trans  &trans  &trans           &trans     &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans  &mth LCTRL RCLK  &mkp LCLK  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans           &trans     &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                 &trans     &trans  &trans          &tog 5
             >;
         };
     };
