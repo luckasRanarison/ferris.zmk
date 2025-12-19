@@ -161,7 +161,7 @@ layers:
   - F5
   - F6
   - F11
-  - $$mdi:lock-open$$
+  - OUT TOG
   - {t: '$$mdi:bluetooth-connect$$', h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
   - $$mdi:volume-off$$
