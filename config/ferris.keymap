@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
@@ -316,10 +317,10 @@
         func_layer {
             display-name = "FUNC";
             bindings = <
-&bootloader     &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC     &kp K_SLEEP      &kp F1  &kp F2  &kp F3  &kp F10
-&bt BT_CLR      &bt BT_PRV         &bt BT_NXT    &kp K_PREV            &kp K_NEXT        &kp K_LOCK       &kp F4  &kp F5  &kp F6  &kp F11
-&studio_unlock  &bt BT_SEL 0       &bt BT_SEL 1  &kp K_MUTE            &kp K_PLAY_PAUSE  &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
-                                                 &trans                &trans            &trans           &trans
+&bootloader   &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC     &kp K_SLEEP      &kp F1  &kp F2  &kp F3  &kp F10
+&bt BT_CLR    &bt BT_PRV         &bt BT_NXT    &kp K_PREV            &kp K_NEXT        &kp K_LOCK       &kp F4  &kp F5  &kp F6  &kp F11
+&out OUT_TOG  &bt BT_SEL 0       &bt BT_SEL 1  &kp K_MUTE            &kp K_PLAY_PAUSE  &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
+                                               &trans                &trans            &trans           &trans
             >;
         };
 
